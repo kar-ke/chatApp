@@ -1,0 +1,46 @@
+:root {
+    --h-full: 100%;
+    --w-full: 100%;
+    --h-screen: 100vh;
+    --w-screen: 100vw;
+    --br-radius-full: 100%;
+
+    --w-profile-picture: 50px;
+    --h-profile-picture: 50px;
+
+    --w-app-sidebar: 84px;
+    --w-chatlist-section: 600px;
+
+    /* chatlist heights for calc function  */
+    --h-header: 100px;
+    --h-search-bar: 80px;
+    --h-archieve-container: 50px;
+}
+
+::placeholder {
+    color: var(--c-grey-300);
+    font-size: var(--f-size-s);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: var(--c-blue-200);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+ul li { list-style-type: none; list-style: none; }
+a { text-decoration: none; cursor:pointer; }
