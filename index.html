@@ -26,44 +26,61 @@
 		<div class="app-container">
 
 			<!-- side bar navigation  -->
-			<aside class="app-sidebar">
-
-				<div class="app-sidebar-menu-top">
-					<div class="logo-container">
-						<a href="#">
-							<img src="./Assets/icons/logoIcon.png" alt="app-logo" class="app-sidebar-logo" />
-						</a>
+			<aside >
+				<nav class="app-sidebar">
+					<div class="app-sidebar-menu">
+						<div class="logo-container">
+							<button href="#" class="button-icons">
+								<img src="./Assets/icons/logoIcon.png" alt="app-logo" class="app-sidebar-logo" />
+							</button>
+						</div>
+						<ul class="app-sidebar-menu">
+							<li>
+								<button class="app-sidebar-icons button-icons">
+									<i class="ri-function-line"></i>
+								</button>
+							</li>
+							<li>
+								<button class="app-sidebar-icons button-icons">
+									<i class="ri-compass-3-line"></i>
+								</button>
+							</li>
+							<li class="active">
+								<button class="app-sidebar-icons button-icons">
+									<i class="ri-message-2-line"></i>
+								</button>
+							</li>
+							<li>
+								<button class="app-sidebar-icons button-icons">
+									<i class="ri-heart-line"></i>
+								</button>
+							</li>
+							<li>
+								<button class="app-sidebar-icons button-icons">
+									<i class="ri-bookmark-line"></i>
+								</button>
+							</li>
+						</ul>
 					</div>
+	
 					<ul class="app-sidebar-menu">
 						<li>
-							<a href="#" class="app-sidebar-icons"><i class="ri-function-line"></i></a>
+							<button href="#" class="app-sidebar-icons button-icons"> 
+								<i class="ri-information-line"></i>
+							</button>
 						</li>
 						<li>
-							<a href="#" class="app-sidebar-icons"><i class="ri-compass-3-line"></i></a>
-						</li>
-						<li class="active">
-							<a href="#" class="app-sidebar-icons"><i class="ri-message-2-line"></i></a>
-						</li>
-						<li>
-							<a href="#" class="app-sidebar-icons"><i class="ri-heart-line"></i></a>
+							<button href="#" class="app-sidebar-icons button-icons"> 
+								<i class="ri-settings-3-line"></i>
+							</button>
 						</li>
 						<li>
-							<a href="#" class="app-sidebar-icons"><i class="ri-bookmark-line"></i></a>
+							<button href="#" class="app-sidebar-icons button-icons"> 
+								<i class="ri-logout-box-r-line"></i>
+							</button>
 						</li>
 					</ul>
-				</div>
-
-				<ul class="app-sidebar-menu-bottom">
-					<li>
-						<a href="#" class="app-sidebar-icons"> <i class="ri-information-line"></i></a>
-					</li>
-					<li>
-						<a href="#" class="app-sidebar-icons"> <i class="ri-settings-3-line"></i></a>
-					</li>
-					<li>
-						<a href="#" class="app-sidebar-icons"> <i class="ri-logout-box-r-line"></i></a>
-					</li>
-				</ul>
+				</nav>			
 			</aside>
 
 			<!-- chat container -->
@@ -91,8 +108,9 @@
 
 					<!-- chat list archived count  -->
 					<div class="archieve-count-container">
-						<p class="archieve-text">Archived&nbsp;<span>221</span></p>
-						<i class="ri-inbox-archive-fill archieve-icon"></i>
+						<button class="button-icons">
+							<p class="archieve-text">Archived&nbsp;<span>221 &nbsp;</span><i class="ri-inbox-archive-fill archieve-icon"></i></p>
+						</button>
 					</div>
 
 					<!-- chat list contacts  -->
@@ -108,7 +126,7 @@
 										<span class="messaged-contact-text">Ola coma tale tale um</span>
 									</div>
 									<div class="messaged-contact-more">
-										<p class="messaged-contact-unread-container"><span class="unread-count">4</span></p>
+										<p><span class="unread-count">4</span></p>
 										<span class="messaged-contact-time">12:26</span>
 									</div>
 								</a>
@@ -137,7 +155,7 @@
 										<span class="messaged-contact-text">I can't go today</span>
 									</div>
 									<div class="messaged-contact-more">
-										<span class="read-recipts"><i class="ri-check-double-line"></i></span>
+										<i class="ri-check-double-line read-recipts" ></i>
 										<span class="messaged-contact-time">11:30</span>
 									</div>
 								</a>
@@ -152,7 +170,7 @@
 										<span class="messaged-contact-text">Keep it up bro</span>
 									</div>
 									<div class="messaged-contact-more">
-										<span class="read-recipts"><i class="ri-check-double-line"></i></span>
+										<i class="ri-check-double-line read-recipts"></i> 
 										<span class="messaged-contact-time">11:10</span>
 									</div>
 								</a>
@@ -167,7 +185,7 @@
 										<span class="messaged-contact-text">Hahaha, i think so</span>
 									</div>
 									<div class="messaged-contact-more">
-										<span class="read-recipts"><i class="ri-check-double-line"></i></span>
+										<i class="ri-check-double-line read-recipts"></i>
 										<span class="messaged-contact-time">10:34</span>
 									</div>
 								</a>
@@ -182,7 +200,7 @@
 										<span class="messaged-contact-text">Let's go for a walk</span>
 									</div>
 									<div class="messaged-contact-more">
-										<p class="messaged-contact-unread-container"><span class="unread-count">3</span></p>
+										<p><span class="unread-count">3</span></p>
 										<span class="messaged-contact-time">6:30</span>
 									</div>
 								</a>
@@ -242,7 +260,7 @@
 										<span class="messaged-contact-text">Lorem ipsum dolor sit amet consectetur.</span>
 									</div>
 									<div class="messaged-contact-more">
-										<p class="messaged-contact-unread-container"><span class="unread-count">7</span></p>
+										<p><span class="unread-count">7</span></p>
 										<span class="messaged-contact-time">12:30</span>
 									</div>
 								</a>
@@ -394,14 +412,14 @@
 
 					<!-- footer - texting area  -->
 					<footer class="conversation-textarea">
-						<div class="emoj-icon-container">
+						<button class="emoj-icon-container button-icons">
 							<img src="./Assets/icons/slightly-smiling-face.png" alt="emojIcon" class="emoj-icon" />
-						</div>
+						</button>
 						<input type="text" placeholder="Write a message" class="conversation-form-input" />
 						<span class="form-icons-array">
-							<i class="ri-link-m input-icons"></i>
-							<i class="ri-mic-line input-icons"></i>
-							<i class="ri-send-plane-fill send-button input-icons"></i>
+							<button class="button-icons"><i class="ri-link-m input-icons"></i></button>
+							<button class="button-icons"><i class="ri-mic-line input-icons"></i></button>
+							<button class="button-icons"><i class="ri-send-plane-fill input-icons"></i></button>
 						</span>
 					</footer>
 				</section>
