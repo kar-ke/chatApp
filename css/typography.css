@@ -1,0 +1,11 @@
+.primary-text {
+    line-height: 1.8;
+    font-weight: 600;
+    font-size: var(--f-size-m);
+    color: var(--c-black)
+}
+
+.secondary-text {
+    font-size: var(--f-size-s);
+    color: var(--c-grey-300);
+}
