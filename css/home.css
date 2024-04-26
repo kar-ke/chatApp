@@ -35,6 +35,7 @@
 .app-sidebar-logo {
   display: block;
   width: 40px;
+  height: 40px;
 }
 
 .app-sidebar-icons {
@@ -426,5 +427,6 @@
 
 .emoj-icon {
   width: 30px;
+  height: 30px;
 }
 /* \\\\ end of SECTION 2 */
