@@ -1,0 +1,24 @@
+
+
+:root {
+    /* fonts sizes  */
+    --f-size-xs: 10px;
+    --f-size-s: 12px;
+    --f-size-m: 14px;
+    --f-size-l: 16px;
+    --f-size-xl: 22px;
+    --f-size-xxl: 24px;
+
+    /* gap  */
+    --g-6: 6px;
+    --g-8: 8px;
+    --g-10: 10px;
+    --g-12: 12px;
+    --g-14: 14px;
+    --g-16: 16px;
+    --g-18: 18px;
+    --g-20: 20px;
+}
+
+
+
