@@ -1,429 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
-		<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Chat App</title>
-		<link rel="shortcut icon" href="./Assets/logoIcon.png" type="image/x-icon" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Wechat messenger app" />
+	<meta name="keywords" content="chatapp , messenger" />
+	<meta name="author" content="karthikeyan" />
 
-		<!-- styles  -->
+	<title>Chat App</title>
+	<link rel="icon" href="./Assets/logoIcon.png" type="image/x-icon" />
 
-		<!-- Poppins font  -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<!-- styles  -->
+	<!-- fonts  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+	<!-- icons -->
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+	<!-- custom styles  -->
+	<link rel="stylesheet" href="./css/root.css" />
+	<!-- \\ styles  -->
+</head>
 
-		<!-- remix icons -->
-		<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
-
-		<!-- custom styles  -->
-		<link rel="stylesheet" href="./css/root.css" />
-
-		<!-- \\ styles  -->
-	</head>
-
-	<body>
-		<div class="app-container">
-
-			<!-- side bar navigation  -->
-			<aside >
-				<nav class="app-sidebar">
-					<div class="app-sidebar-menu">
-						<div class="logo-container">
-							<button href="#" class="button-icons">
-								<img src="./Assets/icons/logoIcon.png" alt="app-logo" class="app-sidebar-logo" />
-							</button>
-						</div>
-						<ul class="app-sidebar-menu">
-							<li>
-								<button class="app-sidebar-icons button-icons">
-									<i class="ri-function-line"></i>
-								</button>
-							</li>
-							<li>
-								<button class="app-sidebar-icons button-icons">
-									<i class="ri-compass-3-line"></i>
-								</button>
-							</li>
-							<li class="active">
-								<button class="app-sidebar-icons button-icons">
-									<i class="ri-message-2-line"></i>
-								</button>
-							</li>
-							<li>
-								<button class="app-sidebar-icons button-icons">
-									<i class="ri-heart-line"></i>
-								</button>
-							</li>
-							<li>
-								<button class="app-sidebar-icons button-icons">
-									<i class="ri-bookmark-line"></i>
-								</button>
-							</li>
-						</ul>
+<body>
+	<div class="app-container">
+		<!-- side bar navigation  -->
+		<aside>
+			<nav class="app-sidebar">
+				<div class="app-sidebar-menu">
+					<div class="logo-container">
+						<button href="#" class="plain-btn">
+							<img src="./Assets/icons/logoIcon.png" alt="app-logo" class="app-sidebar-logo" />
+						</button>
 					</div>
-	
 					<ul class="app-sidebar-menu">
 						<li>
-							<button href="#" class="app-sidebar-icons button-icons"> 
-								<i class="ri-information-line"></i>
+							<button class="app-sidebar-icons plain-btn">
+								<i class="ri-function-line"></i>
 							</button>
 						</li>
 						<li>
-							<button href="#" class="app-sidebar-icons button-icons"> 
-								<i class="ri-settings-3-line"></i>
+							<button class="app-sidebar-icons plain-btn">
+								<i class="ri-compass-3-line"></i>
+							</button>
+						</li>
+						<li class="active">
+							<button class="app-sidebar-icons plain-btn">
+								<i class="ri-message-2-line"></i>
 							</button>
 						</li>
 						<li>
-							<button href="#" class="app-sidebar-icons button-icons"> 
-								<i class="ri-logout-box-r-line"></i>
+							<button class="app-sidebar-icons plain-btn">
+								<i class="ri-heart-line"></i>
+							</button>
+						</li>
+						<li>
+							<button class="app-sidebar-icons plain-btn">
+								<i class="ri-bookmark-line"></i>
 							</button>
 						</li>
 					</ul>
-				</nav>			
-			</aside>
+				</div>
 
-			<!-- chat container -->
-			<div class="app-chat-container">
+				<ul class="app-sidebar-menu">
+					<li>
+						<button href="#" class="app-sidebar-icons plain-btn">
+							<i class="ri-information-line"></i>
+						</button>
+					</li>
+					<li>
+						<button href="#" class="app-sidebar-icons plain-btn">
+							<i class="ri-settings-3-line"></i>
+						</button>
+					</li>
+					<li>
+						<button href="#" class="app-sidebar-icons plain-btn">
+							<i class="ri-logout-box-r-line"></i>
+						</button>
+					</li>
+				</ul>
+			</nav>
+		</aside>
 
-				<!-- chat list section 1  -->
-				<section class="chat-list-container">
+		<!-- chat container -->
+		<div class="app-chat-container">
+			<!-- section 1 - chatlist -->
+			<section class="chat-list-container">
+				<!-- chat list header -->
+				<header class="chat-list-header">
+					<div class="user-image-container">
+						<img src="./Assets/users image/admin.jpg" alt="user" class="user-image" />
+					</div>
+					<div class="user-name-container">
+						<span class="secondary-text">Good Morning</span>
+						<span class="primary-text">Omi Gusty Rifani</span>
+					</div>
+				</header>
 
-					<!-- section 1 header  -->
-					<header class="chat-list-header">
+				<form action="" class="chat-list-search-bar">
+					<img src="./Assets/icons/searchIcon.svg" alt="searchIcon" class="search-icon" />
+					<input type="search" class="chat-list-input" placeholder="Search or start new message" />
+				</form>
+
+				<div class="archieve-count-container">
+					<button class="plain-btn">
+						<p class="archieve-text">Archived&nbsp;<span>221 &nbsp;</span><i class="ri-inbox-archive-fill archieve-icon"></i></p>
+					</button>
+				</div>
+
+				<!-- chat list body  -->
+				<div class="contacts-container">
+					<ul class="messeged-contact-list">
+						<li>
+							<a href="#" class="people-profiles">
+								<div class="user-image-container">
+									<img class="user-image" src="./Assets/users image/img2.jpeg" alt="userimg1" />
+								</div>
+								<div class="messaged-contact-info">
+									<span class="messaged-contact-name">Paveen kumar</span>
+									<span class="messaged-contact-text">Ola coma tale tale um</span>
+								</div>
+								<div class="messaged-contact-more">
+									<p><span class="unread-count">4</span></p>
+									<span class="messaged-contact-time">12:26</span>
+								</div>
+							</a>
+						</li>
+						<li class="active">
+							<a href="#" class="people-profiles">
+								<div class="user-image-container">
+									<img class="user-image" src="./Assets/users image/img3.jpg" alt="userimg3" />
+								</div>
+								<div class="messaged-contact-info">
+									<span class="messaged-contact-name">Kalwabed Rizki</span>
+									<span class="messaged-contact-text">How about we visit wayanad</span>
+								</div>
+								<div class="messaged-contact-more">
+									<span class="messaged-contact-time">12:10</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="people-profiles">
+								<div class="user-image-container">
+									<img class="user-image" src="./Assets/users image/img4.jpg" alt="userimg4" />
+								</div>
+								<div class="messaged-contact-info">
+									<span class="messaged-contact-name">Ika Harumningtyas</span>
+									<span class="messaged-contact-text">I can't go today</span>
+								</div>
+								<div class="messaged-contact-more">
+									<i class="ri-check-double-line read-recipts"></i>
+									<span class="messaged-contact-time">11:30</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="people-profiles">
+								<div class="user-image-container">
+									<img class="user-image" src="./Assets/users image/img5.jpg" alt="userimg5" />
+								</div>
+								<div class="messaged-contact-info">
+									<span class="messaged-contact-name">Ribut Santso</span>
+									<span class="messaged-contact-text">Keep it up bro</span>
+								</div>
+								<div class="messaged-contact-more">
+									<i class="ri-check-double-line read-recipts"></i>
+									<span class="messaged-contact-time">11:10</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="people-profiles">
+								<div class="user-image-container">
+									<img class="user-image" src="./Assets/users image/img6.jpg" alt="iserimg6" />
+								</div>
+								<div class="messaged-contact-info">
+									<span class="messaged-contact-name">Muhammad Amru</span>
+									<span class="messaged-contact-text">Hahaha, i think so</span>
+								</div>
+								<div class="messaged-contact-more">
+									<i class="ri-check-double-line read-recipts"></i>
+									<span class="messaged-contact-time">10:34</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="people-profiles">
+								<div class="user-image-container">
+									<img class="user-image" src="./Assets/users image/img7.jpg" alt="userimg7" />
+								</div>
+								<div class="messaged-contact-info">
+									<span class="messaged-contact-name">Toni</span>
+									<span class="messaged-contact-text">Let's go for a walk</span>
+								</div>
+								<div class="messaged-contact-more">
+									<p><span class="unread-count">3</span></p>
+									<span class="messaged-contact-time">6:30</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="people-profiles">
+								<div class="user-image-container">
+									<img class="user-image" src="./Assets/users image/img8.jpg" alt="userimg8" />
+								</div>
+								<div class="messaged-contact-info">
+									<span class="messaged-contact-name">Bharani dharan</span>
+									<span class="messaged-contact-text">Lorem ipsum dolor sit amet consectetur.</span>
+								</div>
+								<div class="messaged-contact-more">
+									<span class="read-recipts"><i class="ri-check-double-line"></i></span>
+									<span class="messaged-contact-time">12:30</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="people-profiles">
+								<div class="user-image-container">
+									<img class="user-image" src="./Assets/users image/img9.jpg" alt="userimg9" />
+								</div>
+								<div class="messaged-contact-info">
+									<span class="messaged-contact-name">PaveenKumar</span>
+									<span class="messaged-contact-text">Lorem ipsum dolor sit amet consectetur.</span>
+								</div>
+								<div class="messaged-contact-more">
+									<span class="read-recipts"><i class="ri-check-double-line"></i></span>
+									<span class="messaged-contact-time">12:30</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="people-profiles">
+								<div class="user-image-container">
+									<img class="user-image" src="./Assets/users image/img10.jpeg" alt="userimg10" />
+								</div>
+								<div class="messaged-contact-info">
+									<span class="messaged-contact-name">Sophia senthamarai</span>
+									<span class="messaged-contact-text">Lorem ipsum dolor sit amet consectetur.</span>
+								</div>
+								<div class="messaged-contact-more">
+									<span class="read-recipts"><i class="ri-check-double-line"></i></span>
+									<span class="messaged-contact-time">12:30</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="people-profiles">
+								<div class="user-image-container">
+									<img class="user-image" src="./Assets/users image/img11.jpeg" alt="userimg11" />
+								</div>
+								<div class="messaged-contact-info">
+									<span class="messaged-contact-name">Sakthi</span>
+									<span class="messaged-contact-text">Lorem ipsum dolor sit amet consectetur.</span>
+								</div>
+								<div class="messaged-contact-more">
+									<p><span class="unread-count">7</span></p>
+									<span class="messaged-contact-time">12:30</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- section 2 - conversation  -->
+			<section class="conversation">
+				<!-- conversation header  -->
+				<header class="conversation-header">
+					<a class="active-user-profile">
 						<div class="user-image-container">
-							<img src="./Assets/users image/admin.jpg" alt="user" class="user-image" />
+							<img src="./Assets/users image/img3.jpg" alt="userimg3" class="user-image" />
 						</div>
-						<div class="user-name-container">
-							<span class="secondary-text">Good Morning</span>
-							<span class="primary-text">Omi Gusty Rifani</span>
-						</div>
-					</header>
-					
-					<!-- chat list search bar  -->
-					<form action="" class="chat-list-search-bar">
-						<img src="./Assets/icons/searchIcon.svg" alt="searchIcon" class="search-icon" />
-						<input type="search" class="chat-list-input" placeholder="Search or start new message" />
-					</form>
-
-					<!-- chat list archived count  -->
-					<div class="archieve-count-container">
-						<button class="button-icons">
-							<p class="archieve-text">Archived&nbsp;<span>221 &nbsp;</span><i class="ri-inbox-archive-fill archieve-icon"></i></p>
-						</button>
-					</div>
-
-					<!-- chat list contacts  -->
-					<div class="contacts-container">
-						<ul class="messeged-contact-list">
-							<li>
-								<a href="#" class="people-profiles">
-									<div class="user-image-container">
-										<img class="user-image" src="./Assets/users image/img2.jpeg" alt="userimg1" />
-									</div>
-									<div class="messaged-contact-info">
-										<span class="messaged-contact-name">Paveen kumar</span>
-										<span class="messaged-contact-text">Ola coma tale tale um</span>
-									</div>
-									<div class="messaged-contact-more">
-										<p><span class="unread-count">4</span></p>
-										<span class="messaged-contact-time">12:26</span>
-									</div>
-								</a>
-							</li>
-							<li class="active">
-								<a href="#" class="people-profiles">
-									<div class="user-image-container">
-										<img class="user-image" src="./Assets/users image/img3.jpg" alt="userimg3" />
-									</div>
-									<div class="messaged-contact-info">
-										<span class="messaged-contact-name">Kalwabed Rizki</span>
-										<span class="messaged-contact-text">How about we visit wayanad</span>
-									</div>
-									<div class="messaged-contact-more">
-										<span class="messaged-contact-time">12:10</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="people-profiles">
-									<div class="user-image-container">
-										<img class="user-image" src="./Assets/users image/img4.jpg" alt="userimg4" />
-									</div>
-									<div class="messaged-contact-info">
-										<span class="messaged-contact-name">Ika Harumningtyas</span>
-										<span class="messaged-contact-text">I can't go today</span>
-									</div>
-									<div class="messaged-contact-more">
-										<i class="ri-check-double-line read-recipts" ></i>
-										<span class="messaged-contact-time">11:30</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="people-profiles">
-									<div class="user-image-container">
-										<img class="user-image" src="./Assets/users image/img5.jpg" alt="userimg5" />
-									</div>
-									<div class="messaged-contact-info">
-										<span class="messaged-contact-name">Ribut Santso</span>
-										<span class="messaged-contact-text">Keep it up bro</span>
-									</div>
-									<div class="messaged-contact-more">
-										<i class="ri-check-double-line read-recipts"></i> 
-										<span class="messaged-contact-time">11:10</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="people-profiles">
-									<div class="user-image-container">
-										<img class="user-image" src="./Assets/users image/img6.jpg" alt="iserimg6" />
-									</div>
-									<div class="messaged-contact-info">
-										<span class="messaged-contact-name">Muhammad Amru</span>
-										<span class="messaged-contact-text">Hahaha, i think so</span>
-									</div>
-									<div class="messaged-contact-more">
-										<i class="ri-check-double-line read-recipts"></i>
-										<span class="messaged-contact-time">10:34</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="people-profiles">
-									<div class="user-image-container">
-										<img class="user-image" src="./Assets/users image/img7.jpg" alt="userimg7" />
-									</div>
-									<div class="messaged-contact-info">
-										<span class="messaged-contact-name">Toni</span>
-										<span class="messaged-contact-text">Let's go for a walk</span>
-									</div>
-									<div class="messaged-contact-more">
-										<p><span class="unread-count">3</span></p>
-										<span class="messaged-contact-time">6:30</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="people-profiles">
-									<div class="user-image-container">
-										<img class="user-image" src="./Assets/users image/img8.jpg" alt="userimg8" />
-									</div>
-									<div class="messaged-contact-info">
-										<span class="messaged-contact-name">Bharani dharan</span>
-										<span class="messaged-contact-text">Lorem ipsum dolor sit amet consectetur.</span>
-									</div>
-									<div class="messaged-contact-more">
-										<span class="read-recipts"><i class="ri-check-double-line"></i></span>
-										<span class="messaged-contact-time">12:30</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="people-profiles">
-									<div class="user-image-container">
-										<img class="user-image" src="./Assets/users image/img9.jpg" alt="userimg9" />
-									</div>
-									<div class="messaged-contact-info">
-										<span class="messaged-contact-name">PaveenKumar</span>
-										<span class="messaged-contact-text">Lorem ipsum dolor sit amet consectetur.</span>
-									</div>
-									<div class="messaged-contact-more">
-										<span class="read-recipts"><i class="ri-check-double-line"></i></span>
-										<span class="messaged-contact-time">12:30</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="people-profiles">
-									<div class="user-image-container">
-										<img class="user-image" src="./Assets/users image/img10.jpeg" alt="userimg10" />
-									</div>
-									<div class="messaged-contact-info">
-										<span class="messaged-contact-name">Sophia senthamarai</span>
-										<span class="messaged-contact-text">Lorem ipsum dolor sit amet consectetur.</span>
-									</div>
-									<div class="messaged-contact-more">
-										<span class="read-recipts"><i class="ri-check-double-line"></i></span>
-										<span class="messaged-contact-time">12:30</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="people-profiles">
-									<div class="user-image-container">
-										<img class="user-image" src="./Assets/users image/img11.jpeg" alt="userimg11" />
-									</div>
-									<div class="messaged-contact-info">
-										<span class="messaged-contact-name">Sakthi</span>
-										<span class="messaged-contact-text">Lorem ipsum dolor sit amet consectetur.</span>
-									</div>
-									<div class="messaged-contact-more">
-										<p><span class="unread-count">7</span></p>
-										<span class="messaged-contact-time">12:30</span>
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</section>
-
-
-		
-				
-				<!-- conversation area section 2  -->
-				<section class="conversation">
-
-					<!-- section 2 header  -->
-					<header class="conversation-header">
-						<a class="active-user-profile">
-							<div class="user-image-container">
-								<img src="./Assets/users image/img3.jpg" alt="userimg3" class="user-image" />
-							</div>
-							<span class="active-user-info">
-								<span class="primary-text">Kalwabed Rizki</span>
-								<span class="secondary-text">last seen, 09:13 AM</span>
-							</span>
-						</a>
-
-						<div class="conversation-header-icons">
-							<button type="button" class="icon-button">
-								<i class="ri-search-2-line header-icons"></i>
-							</button>
-							<button type="button" class="icon-button">
-								<i class="ri-phone-line header-icons"></i>
-							</button>
-							<button class="icon-button">
-								<i class="ri-side-bar-line header-icons"></i>
-							</button>
-							<button class="icon-button">
-								<i class="ri-more-2-fill header-icons"></i>
-							</button>
-						</div>
-					</header>
-
-					<!-- main conversation container -->
-					<main class="conversation-main">
-						<ul class="conversation-wrapper">
-							<span class="current-convo-day">yesterday</span>
-
-							<!-- left  -->
-							<li class="left-convo">
-								<div class="conversation-item-wrapper">
-									<div class="conversation-item-text">
-										<p>I have updated the last task, Please check it OMI</p>
-										<div class="conversation-time">09:09 AM</div>
-									</div>
-								</div>
-							</li>
-							<li class="left-convo">
-								<div class="conversation-item-wrapper">
-									<div class="conversation-item-text">
-										<p>Don't you feel bored ? Let'a go on vacation tomorrow</p>
-										<div class="conversation-time">09:09 AM</div>
-									</div>
-								</div>
-							</li>
-
-							<!-- right  -->
-							<li class="right-convo">
-								<div class="conversation-item-wrapper">
-									<div class="conversation-item-text">
-										<p>Okay bed thanks for the progress update</p>
-										<div class="conversation-time">09:09 AM</div>
-									</div>
-								</div>
-							</li>
-							<li class="right-convo">
-								<div class="conversation-item-wrapper">
-									<div class="conversation-item-text">
-										<p>Wow really, where are we going on vacation ?</p>
-										<div class="conversation-time">09:09 AM</div>
-									</div>
-								</div>
-							</li>
-
-							<!-- left  -->
-							<li class="left-convo">
-								<div class="conversation-item-wrapper">
-									<div class="conversation-item-text">
-										<p>How about we visit green scenery in my grandmother's hometown. so we can feel refreshing there !</p>
-										<div class="conversation-time">09:09 AM</div>
-									</div>
-								</div>
-							</li>
-							<li class="left-convo">
-								<div class="conversation-item-wrapper">
-									<div class="conversation-media-container">
-										<img src="./Assets/stock images/keralaImg1.jpg" alt="img1" class="conversation-media" />
-										<img src="./Assets/stock images/keralaImg2.jpg" alt="img2" class="conversation-media" />
-									</div>
-								</div>
-							</li>
-
-							<!-- right  -->
-							<li class="right-convo">
-								<div class="conversation-item-wrapper">
-									<div class="conversation-item-text">
-										<p>Okay bed thanks for the progress update</p>
-										<div class="conversation-time">09:09 AM</div>
-									</div>
-								</div>
-							</li>
-							<li class="right-convo">
-								<div class="conversation-item-wrapper">
-									<div class="conversation-item-text">
-										<p>Wow really, where are we going on vacation ?</p>
-										<div class="conversation-time">09:09 AM</div>
-									</div>
-								</div>
-							</li>
-
-							<!-- left  -->
-							<li class="left-convo">
-								<div class="conversation-item-wrapper">
-									<div class="conversation-item-text">
-										<p>I have updated the last task, Please check it OMI</p>
-										<div class="conversation-time">09:09 AM</div>
-									</div>
-								</div>
-							</li>
-							<li class="left-convo">
-								<div class="conversation-item-wrapper">
-									<div class="conversation-item-text">
-										<p>Don't you feel bored ? Let'a go on vacation tomorrow</p>
-										<div class="conversation-time">09:09 AM</div>
-									</div>
-								</div>
-							</li>
-
-							<!-- right  -->
-							<li class="right-convo">
-								<div class="conversation-item-wrapper">
-									<div class="conversation-item-text">
-										<p>Wow really, where are we going on vacation ?</p>
-										<div class="conversation-time">09:09 AM</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</main>
-
-					<!-- footer - texting area  -->
-					<footer class="conversation-textarea">
-						<button class="emoj-icon-container button-icons">
-							<img src="./Assets/icons/slightly-smiling-face.png" alt="emojIcon" class="emoj-icon" />
-						</button>
-						<input type="text" placeholder="Write a message" class="conversation-form-input" />
-						<span class="form-icons-array">
-							<button class="button-icons"><i class="ri-link-m input-icons"></i></button>
-							<button class="button-icons"><i class="ri-mic-line input-icons"></i></button>
-							<button class="button-icons"><i class="ri-send-plane-fill input-icons"></i></button>
+						<span class="active-user-info">
+							<span class="primary-text">Kalwabed Rizki</span>
+							<span class="secondary-text">last seen, 09:13 AM</span>
 						</span>
-					</footer>
-				</section>
-			</div>
+					</a>
+
+					<div class="conversation-header-icons">
+						<button type="button" class="icon-button">
+							<i class="ri-search-2-line header-icons"></i>
+						</button>
+						<button type="button" class="icon-button">
+							<i class="ri-phone-line header-icons"></i>
+						</button>
+						<button class="icon-button">
+							<i class="ri-side-bar-line header-icons"></i>
+						</button>
+						<button class="icon-button">
+							<i class="ri-more-2-fill header-icons"></i>
+						</button>
+					</div>
+				</header>
+
+				<!-- conversation body -->
+				<main class="conversation-main">
+					<ul class="conversation-wrapper">
+						<span class="current-convo-day">yesterday</span>
+
+						<!-- left  -->
+						<li class="left-convo">
+							<div class="conversation-item-wrapper">
+								<div class="conversation-item-text">
+									<p>I have updated the last task, Please check it OMI</p>
+									<div class="conversation-time">09:09 AM</div>
+								</div>
+							</div>
+						</li>
+						<li class="left-convo">
+							<div class="conversation-item-wrapper">
+								<div class="conversation-item-text">
+									<p>Don't you feel bored ? Let'a go on vacation tomorrow</p>
+									<div class="conversation-time">09:09 AM</div>
+								</div>
+							</div>
+						</li>
+
+						<!-- right  -->
+						<li class="right-convo">
+							<div class="conversation-item-wrapper">
+								<div class="conversation-item-text">
+									<p>Okay bed thanks for the progress update</p>
+									<div class="conversation-time">09:09 AM</div>
+								</div>
+							</div>
+						</li>
+						<li class="right-convo">
+							<div class="conversation-item-wrapper">
+								<div class="conversation-item-text">
+									<p>Wow really, where are we going on vacation ?</p>
+									<div class="conversation-time">09:09 AM</div>
+								</div>
+							</div>
+						</li>
+
+						<!-- left  -->
+						<li class="left-convo">
+							<div class="conversation-item-wrapper">
+								<div class="conversation-item-text">
+									<p>How about we visit green scenery in my grandmother's hometown. so we can feel refreshing there !</p>
+									<div class="conversation-time">09:09 AM</div>
+								</div>
+							</div>
+						</li>
+						<li class="left-convo">
+							<div class="conversation-item-wrapper">
+								<div class="conversation-media-container">
+									<img src="./Assets/stock images/keralaImg1.jpg" alt="img1" class="conversation-media" />
+									<img src="./Assets/stock images/keralaImg2.jpg" alt="img2" class="conversation-media" />
+								</div>
+							</div>
+						</li>
+
+						<!-- right  -->
+						<li class="right-convo">
+							<div class="conversation-item-wrapper">
+								<div class="conversation-item-text">
+									<p>Okay bed thanks for the progress update</p>
+									<div class="conversation-time">09:09 AM</div>
+								</div>
+							</div>
+						</li>
+						<li class="right-convo">
+							<div class="conversation-item-wrapper">
+								<div class="conversation-item-text">
+									<p>Wow really, where are we going on vacation ?</p>
+									<div class="conversation-time">09:09 AM</div>
+								</div>
+							</div>
+						</li>
+
+						<!-- left  -->
+						<li class="left-convo">
+							<div class="conversation-item-wrapper">
+								<div class="conversation-item-text">
+									<p>I have updated the last task, Please check it OMI</p>
+									<div class="conversation-time">09:09 AM</div>
+								</div>
+							</div>
+						</li>
+						<li class="left-convo">
+							<div class="conversation-item-wrapper">
+								<div class="conversation-item-text">
+									<p>Don't you feel bored ? Let'a go on vacation tomorrow</p>
+									<div class="conversation-time">09:09 AM</div>
+								</div>
+							</div>
+						</li>
+
+						<!-- right  -->
+						<li class="right-convo">
+							<div class="conversation-item-wrapper">
+								<div class="conversation-item-text">
+									<p>Wow really, where are we going on vacation ?</p>
+									<div class="conversation-time">09:09 AM</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</main>
+
+				<!-- footer - text input field  -->
+				<footer class="conversation-textarea">
+					<button class="emoj-icon-container plain-btn">
+						<img src="./Assets/icons/slightly-smiling-face.png" alt="emojIcon" class="emoj-icon" />
+					</button>
+					<input type="text" placeholder="Write a message" class="conversation-form-input" />
+					<span class="form-icons-array">
+						<button class="plain-btn"><i class="ri-link-m input-icons"></i></button>
+						<button class="plain-btn"><i class="ri-mic-line input-icons"></i></button>
+						<button class="plain-btn"><i class="ri-send-plane-fill input-icons"></i></button>
+					</span>
+				</footer>
+			</section>
 		</div>
-	</body>
+	</div>
+</body>
 </html>

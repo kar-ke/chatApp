@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
     outline: none;
     border: none;
-    font-family: "Poppins", sans-serif;
 }
 
 body{
@@ -17,9 +17,14 @@ body{
 :root {
     --h-full: 100%;
     --w-full: 100%;
+    --h-half: 50%;
+    --w-half: 50%;
+
     --h-screen: 100vh;
     --w-screen: 100vw;
+
     --br-radius-full: 100%;
+    --br-radius-half: 50%;
 
     --w-profile-picture: 50px;
     --h-profile-picture: 50px;
@@ -51,7 +56,7 @@ body{
 ul li { list-style-type: none; list-style: none; }
 a { text-decoration: none; cursor:pointer; }
 
-.button-icons {
+.plain-btn {
     outline: none;
     border: none;
     background: none;
