@@ -1,11 +1,11 @@
 .primary-text {
-    line-height: 1.8;
-    font-weight: 600;
     font-size: var(--f-size-m);
+    font-family: var(--font-semibold);
     color: var(--c-black)
 }
 
 .secondary-text {
     font-size: var(--f-size-s);
+    font-family: var(--font-regular);
     color: var(--c-grey-300);
 }

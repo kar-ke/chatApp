@@ -28,7 +28,7 @@
 .logo-container {
   display: grid;
   place-items: center;
-  height: var(--h-header);
+  height: var(--h-sidebar-header);
   width: var(--w-full);
 }
 
@@ -65,13 +65,13 @@
 /* Chat list area - SECTION 1 */
 .app-chat-container {
   display: flex;
-  width: var(--w-full);
+  width: calc(100% - var(--w-app-sidebar));
   height: var(--h-screen);
 }
 
 .chat-list-container {
   height: var(--h-full);
-  width: var(--w-chatlist-section);
+  width: var(--w-chatlist-container);
   background-color: var(--c-blue-100);
 }
 
@@ -83,7 +83,7 @@
   padding: 0 22px;
   column-gap: var(--g-12);
   border-bottom: 1px solid var(--c-grey-200);
-  height: var(--h-header);
+  height: var(--h-chatlist-header);
 }
 
 .user-image {
@@ -119,9 +119,12 @@
   width: var(--w-full);
   border-radius: 10px;
   font-size: var(--f-size-s);
+  font-family: var(--font-light);
   padding: 10px 32px 10px 34px;
   color: var(--c-grey-300);
   background-color: var(--c-white);
+  outline: none;
+  border: none;
 }
 
 /* archive count */
@@ -132,6 +135,7 @@
 
 .archieve-text {
   font-size: var(--f-size-s);
+  font-family: var(--font-light);
   padding: 15px 0;
   color: var(--c-grey-300);
 }
@@ -143,7 +147,7 @@
 
 /* messeged contacts list  */
 .contacts-container {
-  height: calc(100% - (var(--h-header) + var(--h-archieve-container) + var(--h-search-bar)));
+  height: calc(100% - (var(--h-chatlist-header) + var(--h-archieve-container) + var(--h-search-bar)));
   padding: 0 10px;
   overflow-y: auto;
 }
@@ -162,11 +166,6 @@
   background-color: var(--c-blue-200);
 }
 
-.active > .people-profiles {
-  color: var(--c-white);
-  background-color: var(--c-blue-300);
-}
-
 .messaged-contact-info {
   display: block;
   width: var(--w-full);
@@ -174,21 +173,9 @@
 
 .messaged-contact-name {
   display: block;
+  font-family: var(--font-medium);
   font-size: var(--f-size-l);
   font-weight: 500;
-}
-
-.messaged-contact-text {
-  font-size: var(--f-size-s);
-  color: var(--c-grey-300);
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.active > .people-profiles > .messaged-contact-info > .messaged-contact-text {
-  color: var(--c-grey-200);
-  font-size: var(--f-size-s);
 }
 
 .messaged-contact-more {
@@ -199,8 +186,9 @@
 
 .unread-count {
   font-size: var(--f-size-s);
+  font-family: inherit;
   font-weight: 400;
-  padding: 1px 6px;
+  padding: 2px 6px;
   border-radius: var(--br-radius-half);
   color: var(--c-white);
   background-color: var(--c-blue-300);
@@ -215,6 +203,21 @@
   font-size: var(--f-size-xl);
   color: var(--c-grey-200)
 }
+
+.active > .people-profiles {
+  color: var(--c-white);
+  background-color: var(--c-blue-300);
+}
+
+.active  .secondary-text {
+  color: var(--c-grey-200);
+  font-size: var(--f-size-s);
+}
+
+.active .messaged-contact-time{
+  font-size: var(--f-size-s);
+  color: var(--c-grey-200);
+}
 /* \\\\ end of SECTION 1  */
 
 
@@ -226,7 +229,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: var(--h-screen);
-  width: var(--w-full);
+  width: calc(100% - var(--w-chatlist-container));
   background-color: var(--c-white);
 }
 
@@ -235,7 +238,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: var(--h-header);
+  height: var(--h-conversation-header);
   padding: 0 22px;
   border-bottom: 1px solid var(--c-grey-200);
 }
@@ -270,6 +273,8 @@
   color: var(--c-grey-300);
   background-color: var(--c-grey-100);
   cursor: pointer;
+  outline: none;
+  border: none;
 }
 
 .icon-button:hover {
@@ -278,7 +283,7 @@
 
 /* conversation body */
 .conversation-main {
-  height: calc(100% - 170px);
+  height: calc(100% - (var(--h-conversation-header) + var(--h-conversation-footer)));
   padding-top: 20px;
   overflow-y: auto;
 }
@@ -287,12 +292,14 @@
   display: flex;
   position: relative;
   flex-direction: column;
+  font-family: var(--font-regular);
   gap: var(--g-6);
   padding: 0 20px;
 }
 
 .current-convo-day {
   font-size: var(--f-size-s);
+  font-family: inherit;
   color: var(--c-grey-300);
   background-color: var(--c-grey-100);
   border-radius: 5px;
@@ -384,7 +391,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
+  height: var(--h-conversation-footer);
   position: relative;
 }
 
@@ -392,10 +399,13 @@
   width: var(--w-full);
   padding: 16px 10px 16px 50px;
   font-size: var(--f-size-s);
+  font-family: var(--font-regular);
   color: var(--c-grey-300);
   background-color: var(--c-blue-100);
   margin: 0 20px;
   border-radius: 25px;
+  outline: none;
+  border: none;
 }
 
 .form-icons-array {
