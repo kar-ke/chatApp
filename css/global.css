@@ -58,9 +58,3 @@ body{
 ul li { list-style-type: none; list-style: none; }
 a { text-decoration: none; cursor:pointer; }
 
-.plain-btn {
-    outline: none;
-    border: none;
-    background: none;
-    cursor: pointer;
-}
