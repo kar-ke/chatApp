@@ -1,0 +1,9 @@
+.plain-btn {
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    text-align: center;
+}
