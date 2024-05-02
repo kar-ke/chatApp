@@ -23,61 +23,59 @@
 <body>
 	<div class="app-container">
 		<!-- side bar navigation  -->
-		<aside>
-			<nav class="app-sidebar">
-				<div class="app-sidebar-menu">
-					<div class="logo-container">
-						<button href="#" class="plain-btn">
-							<img src="./Assets/icons/logoIcon.png" alt="app-logo" loading="lazy" class="app-sidebar-logo" />
-						</button>
-					</div>
-					<ul class="app-sidebar-menu">
-						<li>
-							<button class="app-sidebar-icons plain-btn">
-								<i class="ri-function-line"></i>
-							</button>
-						</li>
-						<li>
-							<button class="app-sidebar-icons plain-btn">
-								<i class="ri-compass-3-line"></i>
-							</button>
-						</li>
-						<li class="active">
-							<button class="app-sidebar-icons plain-btn">
-								<i class="ri-message-2-line"></i>
-							</button>
-						</li>
-						<li>
-							<button class="app-sidebar-icons plain-btn">
-								<i class="ri-heart-line"></i>
-							</button>
-						</li>
-						<li>
-							<button class="app-sidebar-icons plain-btn">
-								<i class="ri-bookmark-line"></i>
-							</button>
-						</li>
-					</ul>
+		<aside class="app-sidebar">
+			<nav class="app-sidebar-menu">
+				<div class="logo-container">
+					<a href="#" class="default-btn">
+						<img src="./Assets/icons/logoIcon.png" alt="app-logo" loading="lazy" class="app-sidebar-logo" />
+					</a>
 				</div>
-
 				<ul class="app-sidebar-menu">
-					<li>
-						<button href="#" class="app-sidebar-icons plain-btn">
-							<i class="ri-information-line"></i>
-						</button>
+					<li class="app-sidebar-icons">
+						<a>
+							<i class="ri-function-line"></i>
+						</a>
 					</li>
-					<li>
-						<button href="#" class="app-sidebar-icons plain-btn">
-							<i class="ri-settings-3-line"></i>
-						</button>
+					<li  class="app-sidebar-icons">
+						<a>
+							<i class="ri-compass-3-line"></i>
+						</a>
 					</li>
-					<li>
-						<button href="#" class="app-sidebar-icons plain-btn">
-							<i class="ri-logout-box-r-line"></i>
-						</button>
+					<li class="active app-sidebar-icons">
+						<a>
+							<i class="ri-message-2-line"></i>
+						</a>
+					</li>
+					<li class="app-sidebar-icons">
+						<a>
+							<i class="ri-heart-line"></i>
+						</a>
+					</li>
+					<li class="app-sidebar-icons">
+						<a>
+							<i class="ri-bookmark-line"></i>
+						</a>
 					</li>
 				</ul>
 			</nav>
+
+			<ul class="app-sidebar-menu">
+				<li>
+					<a href="#" class="app-sidebar-icons">
+						<i class="ri-information-line"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="app-sidebar-icons">
+						<i class="ri-settings-3-line"></i>
+					</a>
+				</li>
+				<li >
+					<a href="#" class="app-sidebar-icons">
+						<i class="ri-logout-box-r-line"></i>
+					</a>
+				</li>
+			</ul>	
 		</aside>
 
 		<!-- chat container -->
@@ -86,325 +84,344 @@
 			<section class="chat-list-container">
 				<!-- chat list header -->
 				<header class="chat-list-header">
-					<div class="user-image-container">
-						<img src="./Assets/users image/admin.jpg" alt="user" loading="lazy" class="user-image" />
-					</div>
-					<div class="user-name-container">
-						<span class="secondary-text">Good Morning</span>
-						<span class="primary-text">Omi Gusty Rifani</span>
+					<div class="chat-list-user-details">
+						<div>
+							<img src="./Assets/users image/admin.jpg" alt="user" loading="lazy" class="user-image" />
+						</div>
+						<div>
+							<div><span>Good Morning</span></div>
+							<span class="title">Omi Gusty Rifani</span>
+						</div>
 					</div>
 				</header>
 
-				<form action="" class="chat-list-search-bar">
+				<div class="chat-list-search-bar">
 					<img src="./Assets/icons/searchIcon.svg" alt="searchIcon" loading="lazy" class="search-icon" />
 					<input type="search" class="chat-list-input secondary-text" placeholder="Search or start new message" />
-				</form>
+				</div>
 
 				<div class="archieve-count-container">
-					<button class="plain-btn">
-						<p class="archieve-text">Archived&nbsp;<span>221 &nbsp;</span><i class="ri-inbox-archive-fill archieve-icon"></i></p>
+					<button class="default-btn archive-btn">
+						<span>Archived</span>
+						<span>221</span>
+						<i class="ri-inbox-archive-fill archieve-icon"></i>
 					</button>
 				</div>
 
 				<!-- chat list body  -->
-				<div class="contacts-container">
-					<ul class="messeged-contact-list">
+				<div class="messeged-contacts-container">
+					<ul>
 						<li>
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img2.jpeg" loading="lazy" alt="userimg1" />
+							<a href="#" class="messeged-contact-link">
+								<div>
+									<img class="messeged-contact-image" src="./Assets/users image/img2.jpeg" loading="lazy" alt="userimg1" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">Paveen kumar</span>
+									<div><span class="messaged-contact-name">Paveen kumar</span></div>
 									<span class="secondary-text">Ola coma tale tale um</span>
 								</div>
 								<div class="messaged-contact-more">
-									<p><span class="unread-count">4</span></p>
-									<span class="messaged-contact-time">12:26</span>
+									<div>
+										<div class="unread-count-container"></div>
+										<p class="unread-count">5</p>
+									</div>
+									<div class="messaged-time">12:26&nbsp;AM</div>
 								</div>
 							</a>
 						</li>
 						<li class="active">
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img3.jpg" loading="lazy" alt="userimg3" />
+							<a href="#" class="messeged-contact-link">
+								<div >
+									<img class="messeged-contact-image" src="./Assets/users image/img3.jpg" loading="lazy" alt="userimg3" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">Kalwabed Rizki</span>
+									<div><span class="messaged-contact-name">Kalwabed Rizki</span></div>
 									<span class="secondary-text">How about we visit wayanad</span>
 								</div>
 								<div class="messaged-contact-more">
-									<span class="messaged-contact-time">12:10</span>
+									<span class="messaged-time">12:10&nbsp;AM</span>
 								</div>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img4.jpg" loading="lazy" alt="userimg4" />
+							<a href="#" class="messeged-contact-link">
+								<div >
+									<img class="messeged-contact-image" src="./Assets/users image/img4.jpg" loading="lazy" alt="userimg4" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">Ika Harumningtyas</span>
+									<div><span class="messaged-contact-name">Ika Harumningtyas</span></div>
 									<span class="secondary-text">I can't go today</span>
 								</div>
 								<div class="messaged-contact-more">
 									<i class="ri-check-double-line read-recipts"></i>
-									<span class="messaged-contact-time">11:30</span>
+									<span class="messaged-time">11:30&nbsp;AM</span>
 								</div>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img5.jpg" loading="lazy" alt="userimg5" />
+							<a href="#" class="messeged-contact-link">
+								<div >
+									<img class="messeged-contact-image" src="./Assets/users image/img5.jpg" loading="lazy" alt="userimg5" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">Ribut Santso</span>
+									<div><span class="messaged-contact-name">Ribut Santso</span></div>
 									<span class="secondary-text">Keep it up bro</span>
 								</div>
 								<div class="messaged-contact-more">
 									<i class="ri-check-double-line read-recipts"></i>
-									<span class="messaged-contact-time">11:10</span>
+									<span class="messaged-time">11:10&nbsp;AM</span>
 								</div>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img6.jpg" loading="lazy" alt="iserimg6" />
+							<a href="#" class="messeged-contact-link">
+								<div >
+									<img class="messeged-contact-image" src="./Assets/users image/img6.jpg" loading="lazy" alt="iserimg6" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">Muhammad Amru</span>
+									<div><span class="messaged-contact-name">Muhammad Amru</span></div>
 									<span class="secondary-text">Hahaha, i think so</span>
 								</div>
 								<div class="messaged-contact-more">
 									<i class="ri-check-double-line read-recipts"></i>
-									<span class="messaged-contact-time">10:34</span>
+									<span class="messaged-time">10:34&nbsp;AM</span>
 								</div>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img7.jpg" loading="lazy" alt="userimg7" />
+							<a href="#" class="messeged-contact-link">
+								<div >
+									<img class="messeged-contact-image" src="./Assets/users image/img7.jpg" loading="lazy" alt="userimg7" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">Toni</span>
+									<div><span class="messaged-contact-name">Toni</span></div>
 									<span class="secondary-text">Let's go for a walk</span>
 								</div>
 								<div class="messaged-contact-more">
-									<p><span class="unread-count">3</span></p>
-									<span class="messaged-contact-time">6:30</span>
+									<div>
+										<div><div class="unread-count-container"></div></div>
+										<p class="unread-count">4</p>
+									</div>
+									<div class="messaged-time">10:26&nbsp;AM</div>
 								</div>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img8.jpg" loading="lazy" alt="userimg8" />
+							<a href="#" class="messeged-contact-link">
+								<div >
+									<img class="messeged-contact-image" src="./Assets/users image/img8.jpg" loading="lazy" alt="userimg8" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">Bharani dharan</span>
+									<div><span class="messaged-contact-name">Bharani dharan</span></div>
 									<span class="secondary-text">Lorem ipsum dolor sit amet consectetur.</span>
 								</div>
 								<div class="messaged-contact-more">
 									<span class="read-recipts"><i class="ri-check-double-line"></i></span>
-									<span class="messaged-contact-time">12:30</span>
+									<span class="messaged-time">12:30&nbsp;AM</span>
 								</div>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img9.jpg" loading="lazy" alt="userimg9" />
+							<a href="#" class="messeged-contact-link">
+								<div >
+									<img class="messeged-contact-image" src="./Assets/users image/img9.jpg" loading="lazy" alt="userimg9" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">PaveenKumar</span>
+									<div><span class="messaged-contact-name">PaveenKumar</span></div>
 									<span class="secondary-text">Lorem ipsum dolor sit amet consectetur.</span>
 								</div>
 								<div class="messaged-contact-more">
 									<span class="read-recipts"><i class="ri-check-double-line"></i></span>
-									<span class="messaged-contact-time">12:30</span>
+									<span class="messaged-time">12:30&nbsp;AM</span>
 								</div>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img10.jpeg" loading="lazy" alt="userimg10" />
+							<a href="#" class="messeged-contact-link">
+								<div >
+									<img class="messeged-contact-image" src="./Assets/users image/img10.jpeg" loading="lazy" alt="userimg10" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">Sophia senthamarai</span>
+									<div><span class="messaged-contact-name">Sophia senthamarai</span></div>
 									<span class="secondary-text">Lorem ipsum dolor sit amet consectetur.</span>
 								</div>
 								<div class="messaged-contact-more">
 									<span class="read-recipts"><i class="ri-check-double-line"></i></span>
-									<span class="messaged-contact-time">12:30</span>
+									<span class="messaged-time">12:30&nbsp;AM</span>
 								</div>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img11.jpeg" loading="lazy" alt="userimg11" />
+							<a href="#" class="messeged-contact-link">
+								<div >
+									<img class="messeged-contact-image" src="./Assets/users image/img11.jpeg" loading="lazy" alt="userimg11" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">Sakthi</span>
+									<div><span class="messaged-contact-name">Sakthi</span></div>
 									<span class="secondary-text">Lorem ipsum dolor sit amet consectetur.</span>
 								</div>
 								<div class="messaged-contact-more">
-									<p><span class="unread-count">7</span></p>
-									<span class="messaged-contact-time">12:30</span>
+									<div>
+										<div class="unread-count-container"></div>
+										<p class="unread-count">3</p>
+									</div>
+									<div class="messaged-time">12:26&nbsp;AM</div>
 								</div>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img4.jpg" loading="lazy" alt="userimg4" />
+							<a href="#" class="messeged-contact-link">
+								<div >
+									<img class="messeged-contact-image" src="./Assets/users image/img4.jpg" loading="lazy" alt="userimg4" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">Ika Harumningtyas</span>
+									<div><span class="messaged-contact-name">Ika Harumningtyas</span></div>
 									<span class="secondary-text">I can't go today</span>
 								</div>
 								<div class="messaged-contact-more">
 									<i class="ri-check-double-line read-recipts"></i>
-									<span class="messaged-contact-time">11:30</span>
+									<span class="messaged-time">11:30&nbsp;AM</span>
 								</div>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img5.jpg" loading="lazy" alt="userimg5" />
+							<a href="#" class="messeged-contact-link">
+								<div >
+									<img class="messeged-contact-image" src="./Assets/users image/img5.jpg" loading="lazy" alt="userimg5" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">Ribut Santso</span>
+									<div><span class="messaged-contact-name">Ribut Santso</span></div>
 									<span class="secondary-text">Keep it up bro</span>
 								</div>
 								<div class="messaged-contact-more">
 									<i class="ri-check-double-line read-recipts"></i>
-									<span class="messaged-contact-time">11:10</span>
+									<span class="messaged-time">11:10&nbsp;AM</span>
 								</div>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img6.jpg" loading="lazy" alt="iserimg6" />
+							<a href="#" class="messeged-contact-link">
+								<div >
+									<img class="messeged-contact-image" src="./Assets/users image/img6.jpg" loading="lazy" alt="iserimg6" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">Muhammad Amru</span>
+									<div><span class="messaged-contact-name">Muhammad Amru</span></div>
 									<span class="secondary-text">Hahaha, i think so</span>
 								</div>
 								<div class="messaged-contact-more">
 									<i class="ri-check-double-line read-recipts"></i>
-									<span class="messaged-contact-time">10:34</span>
+									<span class="messaged-time">10:34&nbsp;AM</span>
 								</div>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img7.jpg"  loading="lazy" alt="userimg7" />
+							<a href="#" class="messeged-contact-link">
+								<div >
+									<img class="messeged-contact-image" src="./Assets/users image/img7.jpg"  loading="lazy" alt="userimg7" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">Toni</span>
+									<div><span class="messaged-contact-name">Toni</span></div>
 									<span class="secondary-text">Let's go for a walk</span>
 								</div>
 								<div class="messaged-contact-more">
-									<p><span class="unread-count">3</span></p>
-									<span class="messaged-contact-time">6:30</span>
+									<div>
+										<div class="unread-count-container"></div>
+										<p class="unread-count">3</p>
+									</div>
+									<div class="messaged-time">12:26&nbsp;AM</div>
 								</div>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img4.jpg" loading="lazy" alt="userimg4" />
+							<a href="#" class="messeged-contact-link">
+								<div >
+									<img class="messeged-contact-image" src="./Assets/users image/img4.jpg" loading="lazy" alt="userimg4" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">Ika Harumningtyas</span>
+									<div><span class="messaged-contact-name">Ika Harumningtyas</span></div>
 									<span class="secondary-text">I can't go today</span>
 								</div>
 								<div class="messaged-contact-more">
 									<i class="ri-check-double-line read-recipts"></i>
-									<span class="messaged-contact-time">11:30</span>
+									<span class="messaged-time">11:30&nbsp;AM</span>
 								</div>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img5.jpg" loading="lazy" alt="userimg5" />
+							<a href="#" class="messeged-contact-link">
+								<div >
+									<img class="messeged-contact-image" src="./Assets/users image/img5.jpg" loading="lazy" alt="userimg5" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">Ribut Santso</span>
+									<div><span class="messaged-contact-name">Ribut Santso</span></div>
 									<span class="secondary-text">Keep it up bro</span>
 								</div>
 								<div class="messaged-contact-more">
 									<i class="ri-check-double-line read-recipts"></i>
-									<span class="messaged-contact-time">11:10</span>
+									<span class="messaged-time">11:10&nbsp;AM</span>
 								</div>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img6.jpg" loading="lazy" alt="iserimg6" />
+							<a href="#" class="messeged-contact-link">
+								<div >
+									<img class="messeged-contact-image" src="./Assets/users image/img6.jpg" loading="lazy" alt="iserimg6" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">Muhammad Amru</span>
+									<div><span class="messaged-contact-name">Muhammad Amru</span></div>
 									<span class="secondary-text">Hahaha, i think so</span>
 								</div>
 								<div class="messaged-contact-more">
 									<i class="ri-check-double-line read-recipts"></i>
-									<span class="messaged-contact-time">10:34</span>
+									<span class="messaged-time">10:34&nbsp;AM</span>
 								</div>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img7.jpg" loading="lazy" alt="userimg7" />
+							<a href="#" class="messeged-contact-link">
+								<div >
+									<img class="messeged-contact-image" src="./Assets/users image/img7.jpg" loading="lazy" alt="userimg7" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">Toni</span>
+									<div><span class="messaged-contact-name">Toni</span></div>
 									<span class="secondary-text">Let's go for a walk</span>
 								</div>
 								<div class="messaged-contact-more">
-									<p><span class="unread-count">3</span></p>
-									<span class="messaged-contact-time">6:30</span>
+									<div>
+										<div class="unread-count-container"></div>
+										<p class="unread-count">3</p>
+									</div>
+									<div class="messaged-time">12:26&nbsp;AM</div>
 								</div>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img8.jpg" loading="lazy" alt="userimg8" />
+							<a href="#" class="messeged-contact-link">
+								<div >
+									<img class="messeged-contact-image" src="./Assets/users image/img8.jpg" loading="lazy" alt="userimg8" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">Bharani dharan</span>
+									<div><span class="messaged-contact-name">Bharani dharan</span></div>
 									<span class="secondary-text">Lorem ipsum dolor sit amet consectetur.</span>
 								</div>
 								<div class="messaged-contact-more">
 									<span class="read-recipts"><i class="ri-check-double-line"></i></span>
-									<span class="messaged-contact-time">12:30</span>
+									<span class="messaged-time">12:30&nbsp;AM</span>
 								</div>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="people-profiles">
-								<div class="user-image-container">
-									<img class="user-image" src="./Assets/users image/img9.jpg" loading="lazy" alt="userimg9" />
+							<a href="#" class="messeged-contact-link">
+								<div >
+									<img class="messeged-contact-image" src="./Assets/users image/img9.jpg" loading="lazy" alt="userimg9" />
 								</div>
 								<div class="messaged-contact-info">
-									<span class="messaged-contact-name">PaveenKumar</span>
+									<div><span class="messaged-contact-name">PaveenKumar</span></div>
 									<span class="secondary-text">Lorem ipsum dolor sit amet consectetur.</span>
 								</div>
 								<div class="messaged-contact-more">
 									<span class="read-recipts"><i class="ri-check-double-line"></i></span>
-									<span class="messaged-contact-time">12:30</span>
+									<span class="messaged-time">12:30&nbsp;AM</span>
 								</div>
 							</a>
 						</li>
@@ -416,30 +433,38 @@
 			<section class="conversation">
 				<!-- conversation header  -->
 				<header class="conversation-header">
-					<a href="#" class="active-user-profile">
-						<div class="user-image-container">
-							<img src="./Assets/users image/img3.jpg" alt="userimg3" loading="lazy" class="user-image" />
+					<div class="active-user-profile">
+						<div>
+							<img src="./Assets/users image/img3.jpg" alt="userImage" loading="lazy" class="user-image" />
 						</div>
-						<span class="active-user-info">
-							<span class="primary-text">Kalwabed Rizki</span>
-							<span class="secondary-text">last seen, 09:13 AM</span>
-						</span>
-					</a>
-
-					<div class="conversation-header-icons">
-						<button type="button" class="icon-button">
-							<i class="ri-search-2-line header-icons"></i>
-						</button>
-						<button type="button" class="icon-button">
-							<i class="ri-phone-line header-icons"></i>
-						</button>
-						<button class="icon-button">
-							<i class="ri-side-bar-line header-icons"></i>
-						</button>
-						<button class="icon-button">
-							<i class="ri-more-2-fill header-icons"></i>
-						</button>
+						<div>
+							<div><span class="title">Kalwabed Rizki</span></div>
+							<span>last seen, 09:13 AM</span>
+						</div>
 					</div>
+
+					<ul class="conversation-header-icons">
+						<li>
+							<button type="button" class="icon-button">
+								<i class="ri-search-2-line header-icons"></i>
+							</button>
+						</li>
+						<li>
+							<button type="button" class="icon-button">
+								<i class="ri-phone-line header-icons"></i>
+							</button>
+						</li>
+						<li>
+							<button class="icon-button">
+								<i class="ri-side-bar-line header-icons"></i>
+							</button>
+						</li>
+						<li>
+							<button class="icon-button">
+								<i class="ri-more-2-fill header-icons"></i>
+							</button>
+						</li>
+					</ul>
 				</header>
 
 				<!-- conversation body -->
@@ -552,14 +577,14 @@
 
 				<!-- footer - text input field  -->
 				<footer class="conversation-textarea">
-					<button class="emoj-icon-container plain-btn">
+					<button class="emoj-icon-container default-btn">
 						<img src="./Assets/icons/slightly-smiling-face.png" alt="emojIcon" loading="lazy" class="emoj-icon" />
 					</button>
 					<input type="text" placeholder="Write a message" class="conversation-form-input" />
 					<span class="form-icons-array">
-						<button class="plain-btn"><i class="ri-link-m input-icons"></i></button>
-						<button class="plain-btn"><i class="ri-mic-line input-icons"></i></button>
-						<button class="plain-btn"><i class="ri-send-plane-fill input-icons"></i></button>
+						<button class="default-btn"><i class="ri-link-m input-icons"></i></button>
+						<button class="default-btn"><i class="ri-mic-line input-icons"></i></button>
+						<button class="default-btn"><i class="ri-send-plane-fill input-icons"></i></button>
 					</span>
 				</footer>
 			</section>

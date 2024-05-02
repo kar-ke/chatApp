@@ -6,9 +6,10 @@
 
 body{
     line-height: 1.5; 
-    color: var(--c-black);
+    color: var(--c-grey-300);
+    background-color: var(--c-black);
     font-size: var(--f-size-s);
-    font-family: Poppins, sans-serif;
+    font-family: var(--font-regular);
 }
 
 :root {

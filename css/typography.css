@@ -1,11 +1,10 @@
-.primary-text {
+.title {
     font-size: var(--f-size-m);
     font-family: var(--font-semibold);
     color: var(--c-black)
 }
 
 .secondary-text {
-    font-size: var(--f-size-s);
     font-family: var(--font-regular);
-    color: var(--c-grey-300);
+    color: var(--c-grey-300)
 }
