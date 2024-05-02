@@ -2,28 +2,24 @@
     font-family: "Poppins_light";
     src: url("../Assets/fonts/Poppins-Light.ttf");
     font-display: swap;
-    font-weight: 400;
 }
 
 @font-face {
     font-family:"Poppins_regular";
     src: url("../Assets/fonts/Poppins-Regular.ttf");
     font-display: swap;
-    font-weight: 400;
 }
 
 @font-face {
     font-family: "Poppins_medium" ;
     src: url("../Assets/fonts/Poppins-Medium.ttf");
     font-display: swap;
-    font-weight: 400;
 }
 
 @font-face {
     font-family: "Poppins_semibold";
     src: url("../Assets/fonts/Poppins-SemiBold.ttf");
     font-display: swap;
-    font-weight: 400;
 }
 
 :root{

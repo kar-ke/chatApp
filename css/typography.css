@@ -1,5 +1,5 @@
 .title {
-    font-size: var(--f-size-m);
+    font-size: 14px;
     font-family: var(--font-semibold);
     color: var(--c-black)
 }
