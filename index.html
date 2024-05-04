@@ -22,7 +22,7 @@
 		<div class="app-container">
 			<!-- side bar navigation  -->
 			<aside class="app-sidebar">
-				<nav class="app-sidebar-menu">
+				<div class="app-sidebar-menu">
 					<div class="logo-container">
 						<a href="#" class="default-btn">
 							<img src="./Assets/icons/logoIcon.png" alt="app-logo" loading="lazy" class="app-sidebar-logo" />
@@ -30,48 +30,32 @@
 					</div>
 					<ul class="app-sidebar-menu">
 						<li class="app-sidebar-icons">
-							<a>
-								<i class="ri-function-line"></i>
-							</a>
+							<a class="app-sidebar-icon"><i class="ri-function-line"></i></a>
 						</li>
 						<li class="app-sidebar-icons">
-							<a>
-								<i class="ri-compass-3-line"></i>
-							</a>
+							<a class="app-sidebar-icon"><i class="ri-compass-3-line"></i></a>
 						</li>
 						<li class="active app-sidebar-icons">
-							<a>
-								<i class="ri-message-2-line"></i>
-							</a>
+							<a class="app-sidebar-icon"><i class="ri-message-2-line"></i></a>
 						</li>
 						<li class="app-sidebar-icons">
-							<a>
-								<i class="ri-heart-line"></i>
-							</a>
+							<a class="app-sidebar-icon"><i class="ri-heart-line"></i></a>
 						</li>
 						<li class="app-sidebar-icons">
-							<a>
-								<i class="ri-bookmark-line"></i>
-							</a>
+							<a class="app-sidebar-icon"><i class="ri-bookmark-line"></i></a>
 						</li>
 					</ul>
-				</nav>
+				</div>
 
 				<ul class="app-sidebar-menu">
-					<li>
-						<a href="#" class="app-sidebar-icons">
-							<i class="ri-information-line"></i>
-						</a>
+					<li class="app-sidebar-icons">
+						<a class="app-sidebar-icon"><i class="ri-information-line"></i></a>
 					</li>
-					<li>
-						<a href="#" class="app-sidebar-icons">
-							<i class="ri-settings-3-line"></i>
-						</a>
+					<li class="app-sidebar-icons">
+						<a class="app-sidebar-icon"><i class="ri-settings-3-line"></i></a>
 					</li>
-					<li>
-						<a href="#" class="app-sidebar-icons">
-							<i class="ri-logout-box-r-line"></i>
-						</a>
+					<li class="app-sidebar-icons">
+						<a class="app-sidebar-icon"><i class="ri-logout-box-r-line"></i></a>
 					</li>
 				</ul>
 			</aside>
@@ -467,11 +451,10 @@
 
 					<!-- conversation body -->
 					<main class="conversation-main">
+						<div class="current-convo-day">
+							<span class="day">yesterday</span>
+						</div>
 						<ul class="conversation-wrapper">
-							<li class="current-convo-day">
-								<span class="day">yesterday</span>
-							</li>
-
 							<!-- left  -->
 							<li class="my-message">
 								<div class="conversation-item-wrapper">
