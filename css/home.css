@@ -213,13 +213,13 @@
   color: var(--c-grey-200)
 }
 
-.active > .messeged-contact-link {
+.contacts.active > .messeged-contact-link {
   background-color: var(--c-blue-300);
   color: var(--c-white);
 }
 
-.active .secondary-text,
-.active .messaged-time {
+.contacts.active .secondary-text,
+.contacts.active .messaged-time {
   color: var(--c-grey-100)
 }
 /* \\\\ end of SECTION 1  */
